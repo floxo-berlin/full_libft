@@ -6,7 +6,7 @@
 /*   By: fporzig <fporzig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:30:07 by fporzig           #+#    #+#             */
-/*   Updated: 2025/01/16 16:58:22 by fporzig          ###   ########.fr       */
+/*   Updated: 2025/01/16 17:10:10 by fporzig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,17 +68,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
 
-// Add get_next_line function declarations
+// get_next_line function declaration
 char	*get_next_line(int fd);
 
-// Add get_next_line utility function declarations
+// get_next_line utility function declarations
 char	*gnl_strchr(const char *s, int c);
 char	*gnl_strdup(const char *s1);
 char	*gnl_strjoin(char const *s1, char const *s2);
 char	*gnl_substr(char const *s, unsigned int start, size_t len);
 size_t	gnl_strlen(const char *s);
 
-// Add ft_printf function declarations
+// ft_printf function declaration
 int		ft_printf(const char *format, ...);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: fporzig <fporzig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 21:48:31 by fporzig           #+#    #+#             */
-/*   Updated: 2025/01/16 16:41:33 by fporzig          ###   ########.fr       */
+/*   Updated: 2025/01/16 17:12:04 by fporzig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,29 +49,29 @@ char	*gnl_strdup(const char *s1)
 
 char	*gnl_strjoin(char const *s1, char const *s2)
 {
-	char	*joined;
+	char	*jnd;
 	size_t	i;
 	size_t	j;
 
 	if (!s1 || !s2)
 		return (NULL);
-	joined = (char *)malloc((gnl_strlen(s1) + gnl_strlen(s2) + 1) * sizeof(char));
-	if (!joined)
+	jnd = (char *)malloc((gnl_strlen(s1) + gnl_strlen(s2) + 1) * sizeof(char));
+	if (!jnd)
 		return (NULL);
 	i = 0;
 	while (s1[i])
 	{
-		joined[i] = s1[i];
+		jnd[i] = s1[i];
 		i++;
 	}
 	j = 0;
 	while (s2[j])
 	{
-		joined[i + j] = s2[j];
+		jnd[i + j] = s2[j];
 		j++;
 	}
-	joined[i + j] = '\0';
-	return (joined);
+	jnd[i + j] = '\0';
+	return (jnd);
 }
 
 char	*gnl_substr(char const *s, unsigned int start, size_t len)
