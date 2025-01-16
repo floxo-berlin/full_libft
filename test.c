@@ -1,4 +1,4 @@
-#include "libft/libft.h"
+#include "libft.h"
 #include <fcntl.h>
 #include <stdio.h>
 
@@ -27,6 +27,20 @@ int main(void)
     char *dup = ft_strdup(str);
     ft_printf("Original: %s, Duplicate: %s\n", str, dup);
     free(dup);
+
+    // Test ft_substr
+    char *substr = ft_substr("Hello, World!", 7, 5);
+    ft_printf("Substring: %s\n", substr);
+    free(substr);
+
+    // Test ft_strjoin
+    char *joined_str = ft_strjoin("Hello, ", "World!");
+    ft_printf("Joined string: %s\n", joined_str);
+    free(joined_str);
+
+    // Test ft_atoi
+    int num = ft_atoi("42");
+    ft_printf("Converted number: %d\n", num);
 
     // Test ft_memmove
     char src[] = "memmove can be very useful......";
@@ -58,3 +72,5 @@ int main(void)
 
     return 0;
 }
+
+// cc -Wall -Wextra -Werror -Ilibft test.c libft.a -o test
