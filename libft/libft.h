@@ -6,7 +6,7 @@
 /*   By: fporzig <fporzig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 15:30:07 by fporzig           #+#    #+#             */
-/*   Updated: 2025/01/16 17:42:31 by fporzig          ###   ########.fr       */
+/*   Updated: 2025/02/17 14:49:49 by fporzig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,8 @@ size_t	gnl_strlen(const char *s);
 
 // ft_printf function declaration
 int		ft_printf(const char *format, ...);
+
+// additional functions
+char	**ft_free(char **s);
 
 #endif
