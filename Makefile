@@ -13,7 +13,7 @@ OBJDIR = obj
 LIBFT_SRC = $(wildcard $(LIBFTDIR)/*.c)
 PRINTF_SRC = $(wildcard $(PRINTF_DIR)/*.c)
 GNL_SRC = $(wildcard $(GNL_DIR)/*.c)
-ADDITIONAL_SRC = $(wildcard $(ADDITIONAL_DIR)/ft_free.c)
+ADDITIONAL_SRC = $(wildcard $(ADDITIONAL_DIR)/*.c)
 SRCFILES = $(LIBFT_SRC) $(PRINTF_SRC) $(GNL_SRC) $(ADDITIONAL_SRC)
 
 # Object files
